@@ -4,7 +4,7 @@ const ResultView = require('./views/result_view.js');
 
 document.addEventListener('DOMContentLoaded', () => {
   const countries = new Countries();
-  countries.getData();
+  countries.bindEvents();
 
   const select = document.querySelector('#countries');
   const selectView = new SelectView(select);

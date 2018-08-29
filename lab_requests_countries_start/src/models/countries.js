@@ -5,7 +5,7 @@ const Countries = function(){
   this.countriesData = null
 }
 
-Countries.prototype.getData = function(){
+Countries.prototype.bindEvents = function(){
   const request = new Request('https://restcountries.eu/rest/v2/all');
   request.get((data) => {
     this.countriesData = data;
