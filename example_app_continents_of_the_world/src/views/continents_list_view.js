@@ -8,6 +8,7 @@ const ContinentsListView = function (container) {
 ContinentsListView.prototype.bindEvents = function () {
   PubSub.subscribe('Continents:continents-data-ready', (evt) => {
     this.continents = evt.detail;
+    // console.log(this.continents);
     this.render();
   });
 };
